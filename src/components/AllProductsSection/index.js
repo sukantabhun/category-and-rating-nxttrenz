@@ -152,11 +152,15 @@ class AllProductsSection extends Component {
     const {productsList, activeOptionId} = this.state
     if (productsList.length === 0) {
       return (
-        <img
+        <>
+          <img
           src="https://assets.ccbp.in/frontend/react-js/nxt-trendz/nxt-trendz-no-products-view.png"
           alt="no products"
           className="no-products"
-        />
+          />
+          <h1>No Products Found</h1>
+          <p>We could not find any products. Try other filters.</p>
+        </>
       )
     }
     return (
